@@ -14,13 +14,14 @@ cd homebrew
 cd dotfiles
 cp .aliases ~/.aliases
 
+# install ohmyfuckingzsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 vim ~/.zshrc
 # add line below
 source ~/.aliases
 # save n close :wq
 # reload terminal
-
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 cd dotfiles
 ./.macos
