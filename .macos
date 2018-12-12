@@ -222,7 +222,7 @@ defaults write com.apple.dock mru-spaces -bool false
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-# Dock orientation to bottom side
+# Dock orientation to left side
 defaults write com.apple.dock orientation left && killall -HUP Dock
 
 # Remove the auto-hiding Dock delay
