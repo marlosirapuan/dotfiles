@@ -199,7 +199,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
 # Set the icon size of Dock items to 50 pixels
-defaults write com.apple.dock tilesize -int 70
+defaults write com.apple.dock tilesize -int 50
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
@@ -223,7 +223,7 @@ defaults write com.apple.dock mru-spaces -bool false
 defaults write com.apple.dock showhidden -bool true
 
 # Dock orientation to bottom side
-defaults write com.apple.dock orientation bottom && killall -HUP Dock
+defaults write com.apple.dock orientation left && killall -HUP Dock
 
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
