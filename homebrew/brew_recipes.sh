@@ -12,12 +12,14 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
+
+# Save Homebrew’s installed location.
+BREW_PREFIX=$(brew --prefix)
 
 # Install GNU core utilities (those that come with OS X are outdated).
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
+ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -29,9 +31,14 @@ brew install gnu-sed --with-default-names
 brew install ngrep
 
 # Install Bash 4.
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 brew install bash
 brew install bash-completion2
+
+# Switch to using brew-installed bash as default shell
+if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
+  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
+  chsh -s "${BREW_PREFIX}/bin/bash";
+fi;
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -41,6 +48,12 @@ brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
+
+# Install font tools. (https://github.com/mathiasbynens/dotfiles/blob/1b9145bb402a00a1ab695d7876706bfbbfc888af/brew.sh#L49)
+brew tap bramstein/webfonttools
+brew install sfnt2woff
+brew install sfnt2woff-zopfli
+brew install woff2
 
 # Install other useful binaries.
 brew install zsh
@@ -56,33 +69,25 @@ brew install tmux
 brew install cmake
 brew install x265
 brew install ffmpeg --with-faac --with-fdk-aac --with-sdl --with-freetype --with-libass --with-libbluray --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265
-brew install python3
-brew install pyenv
 brew install rbenv ruby-build
 rbenv init
 
-sudo easy_install pip
-
-# PHP (last version)
-brew install php
-brew install mcrypt
-brew install homebrew/php/phplint
-brew install composer
-
-# Database
-brew install postgresql
-# https://mariadb.com/kb/en/mariadb/installing-mariadb-on-macos-using-homebrew/
-brew install mariadb
-brew install sqlite3
+# Database (now I use docker for this..)
+# brew install postgresql
+# # https://mariadb.com/kb/en/mariadb/installing-mariadb-on-macos-using-homebrew/
+# brew install mariadb
+# brew install sqlite3
 
 # Database plugins
 # http://postgis.net/install/
-brew install postgis
+# brew install postgis
 
 # Dev
 brew install elixir
+brew install node
 brew install yarn
 brew install watchman
+# npm install -g react-native-cli
 
 # Remove outdated versions from the cellar.
 brew cleanup
