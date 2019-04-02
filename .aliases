@@ -14,6 +14,8 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias c="cd ~/code"
 alias g="git"
+# Undo a `git push` (https://github.com/paulirish/dotfiles/blob/dd33151fcea1431706e4faabef5539f99c6ed379/.aliases#L53)
+alias undopush="git push -f origin HEAD^:master"
 
 # List colors
 unset LSCOLORS
