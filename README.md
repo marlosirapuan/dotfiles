@@ -16,6 +16,9 @@ cp .aliases ~/.aliases
 # Install Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# Install zsh-autosuggestions:
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+
 vim ~/.zshrc
 
 # add line below
