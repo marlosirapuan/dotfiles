@@ -22,4 +22,5 @@ brew cask install fastscripts
 
 # Fonts (https://github.com/Homebrew/homebrew-cask-fonts/tree/master/Casks)
 brew tap caskroom/fonts 
+brew cask install font-hack
 brew cask install font-fira-code
