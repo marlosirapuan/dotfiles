@@ -64,7 +64,7 @@ brew install woff2
 brew install zsh
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install ghostscript
 brew install ssh-copy-id
 brew install tree
