@@ -72,7 +72,7 @@ brew install tmux
 # Install custom tools
 brew install cmake
 brew install x265
-brew install ffmpeg --with-faac --with-fdk-aac --with-sdl --with-freetype --with-libass --with-libbluray --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265
+brew install ffmpeg
 brew install rbenv ruby-build
 rbenv init
 
