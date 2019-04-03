@@ -35,7 +35,7 @@ brew install gnu-sed
 # Install Ngrep
 brew install ngrep
 
-# Install Bash 4.
+# Install Bash 5.
 brew install bash
 brew install bash-completion2
 
