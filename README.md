@@ -13,6 +13,8 @@ cd homebrew
 cd dotfiles
 cp .aliases ~/.aliases
 
+touch ~/.bash_profile
+
 # Install Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -21,8 +23,9 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 vim ~/.zshrc
 
-# add line below
+# add lines below
 source ~/.aliases
+source ~/.bash_profile
 
 # save n close :wq
 # reload terminal
