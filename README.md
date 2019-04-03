@@ -8,6 +8,8 @@ cd dotfiles
 cd homebrew
 ./brew_install.sh
 ./brew_recipes.sh
+
+chmod +x brew_casks.sh
 ./brew_casks.sh
 
 cd dotfiles
