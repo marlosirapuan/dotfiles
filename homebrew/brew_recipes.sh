@@ -76,15 +76,15 @@ brew install ffmpeg --with-faac --with-fdk-aac --with-sdl --with-freetype --with
 brew install rbenv ruby-build
 rbenv init
 
-# Database (now I use docker for this..)
-# brew install postgresql
-# # https://mariadb.com/kb/en/mariadb/installing-mariadb-on-macos-using-homebrew/
-# brew install mariadb
-# brew install sqlite3
+# Database
+brew install postgresql
+# https://mariadb.com/kb/en/mariadb/installing-mariadb-on-macos-using-homebrew/
+brew install mariadb
+brew install sqlite3
 
 # Database plugins
 # http://postgis.net/install/
-# brew install postgis
+brew install postgis
 
 # Dev
 brew install elixir
