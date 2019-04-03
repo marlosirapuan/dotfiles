@@ -11,6 +11,7 @@ brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install fastscripts
 
 # Extras
 brew cask install vlc
