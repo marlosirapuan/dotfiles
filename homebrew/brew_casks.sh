@@ -4,7 +4,7 @@
 
 # Utils
 brew cask install spectacle
-brew cask install 1password
+# brew cask install 1password
 
 # Dev
 brew cask install iterm2
