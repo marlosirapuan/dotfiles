@@ -34,6 +34,8 @@ source ~/.bash_profile
 
 cd dotfiles
 ./.macos
+
+# restart mac (for security)
 ```
 
 ggwp.
