@@ -61,7 +61,6 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install other useful binaries.
-brew install zsh
 brew install git
 brew install git-lfs
 brew install imagemagick
