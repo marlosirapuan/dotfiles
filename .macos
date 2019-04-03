@@ -35,7 +35,7 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Set highlight color to blue
-defaults write NSGlobalDomain AppleHighlightColor -string "0.218002 0.441820 0.703010"
+defaults write NSGlobalDomain AppleHighlightColor -string "0.000000 0.589801 1.000000"
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
