@@ -226,7 +226,7 @@ defaults write com.apple.dock mru-spaces -bool false
 defaults write com.apple.dock showhidden -bool true
 
 # Dock orientation to left side
-defaults write com.apple.dock orientation left && killall -HUP Dock
+# defaults write com.apple.dock orientation left && killall -HUP Dock
 
 # Remove the auto-hiding Dock delay
 defaults write com.apple.dock autohide-delay -float 0
