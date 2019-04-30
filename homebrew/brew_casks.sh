@@ -7,7 +7,7 @@ brew cask install spectacle
 # brew cask install 1password
 
 # Dev
-brew cask install hyper
+brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install imagealpha
 brew cask install imageoptim
