@@ -74,12 +74,6 @@ brew install ffmpeg
 brew install rbenv ruby-build
 rbenv init
 
-# Database
-brew install postgresql
-# https://mariadb.com/kb/en/mariadb/installing-mariadb-on-macos-using-homebrew/
-brew install mariadb
-brew install sqlite3
-
 # Database plugins
 # http://postgis.net/install/
 brew install postgis
