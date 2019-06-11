@@ -74,10 +74,6 @@ brew install ffmpeg
 brew install rbenv ruby-build
 rbenv init
 
-# Database plugins
-# http://postgis.net/install/
-brew install postgis
-
 # Dev
 brew install elixir
 brew install node
