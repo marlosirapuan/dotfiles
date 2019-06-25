@@ -14,8 +14,7 @@ chmod +x brew_casks.sh
 
 cd dotfiles
 cp .aliases ~/.aliases
-
-touch ~/.bash_profile
+cp .bash_profile ~/.bash_profile
 
 # Install zsh:
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
