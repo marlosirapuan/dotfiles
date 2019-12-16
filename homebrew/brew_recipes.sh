@@ -22,7 +22,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 # Install essential libs
 brew install automake autoconf openssl libyaml readline libxslt libtool unixodbc
 # asdf
-brew install asdf
+# brew install asdf
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
