@@ -20,7 +20,7 @@ brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install essential libs
-brew install automake autoconf openssl libyaml readline libxslt libtool unixodbc
+brew install automake autoconf openssl libyaml readline libxslt libtool
 # asdf
 # brew install asdf
 
