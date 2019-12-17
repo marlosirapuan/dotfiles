@@ -20,6 +20,6 @@ brew cask install gyazo
 brew cask install licecap
 
 # Fonts (https://github.com/Homebrew/homebrew-cask-fonts/tree/master/Casks)
-brew tap caskroom/fonts 
+brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font-mono
 brew cask install font-hack-nerd-font
