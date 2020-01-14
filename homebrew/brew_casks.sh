@@ -3,7 +3,6 @@
 # Install some apps.
 
 # Utils
-brew cask install spectacle
 brew cask install sizeup
 
 # Dev
