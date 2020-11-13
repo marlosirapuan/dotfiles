@@ -76,7 +76,8 @@ rbenv init
 
 # Dev
 brew install elixir
-brew install nvm
+# brew install nvm
+#  use: https://github.com/nvm-sh/nvm#installing-and-updating
 brew install yarn
 brew install watchman
 # npm install -g react-native-cli
