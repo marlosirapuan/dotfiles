@@ -22,9 +22,9 @@ cp .bash_profile ~/.bash_profile
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-Install zplugin (best way to install zsh plugins):
+Install zinit (best way to install zsh plugins):
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 ```
 
 After install, edit `"~/.zshrc"` and add:
@@ -33,11 +33,11 @@ source ~/.aliases
 source ~/.bash_profile
 ```
 
-And this lines:
+And this lines at bottom:
 ```
-zplugin light zdharma/fast-syntax-highlighting
-zplugin light zsh-users/zsh-autosuggestions
-zplugin light zsh-users/zsh-completions
+zinit light zdharma/fast-syntax-highlighting
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
 ```
 
 Save and close `":wq"` and reload terminal.
