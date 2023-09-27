@@ -1,4 +1,4 @@
-# My dotfiles
+# My dotfiles [DEPRECATED]
 Simple configuration dot files for macOS and Homebrew.
 
 ```
